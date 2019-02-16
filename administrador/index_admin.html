@@ -103,7 +103,7 @@
 
       
           <!-- start: content -->
-            <div id="content">
+          <div id="content">
                 <div class="panel">
                   <div class="panel-body">
                       <div class="col-md-6 col-sm-12">
@@ -111,7 +111,50 @@
                       </div>
                   </div>                    
                 </div>
+            
+
+            <div class="form-element">
+               <div class="col-md-12">
+                      <div class="panel form-element-padding">
+                        <div class="panel-heading">
+                         <h4>Nuevo Usuario</h4>
+                        </div>
+                        <div class="panel-body" style="padding-bottom:15px;">
+                          <!--Inicia Indicador 1-->
+                            <div class="col-md-3">
+                                <div class="panel">
+                                  <div class="panel-heading-white panel-heading text-center">
+                                      <h4>Atencion de casos</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                    <center>
+                                      <canvas class="doughnut-chart"></canvas>
+                                    </center>
+                                  </div>
+                                </div>
+                            </div>
+                          <!--Fin de Indicador 1--->
+
+                          <!--Inicio Indiador 2--->
+                            <div class="col-md-3">
+                              <div class="panel">
+                                   <div class="panel-heading-white panel-heading text-center">
+                                      <h4>Problematica de Ingreso</h4>
+                                    </div>
+                                    <div class="panel-body">
+                                        <center>
+                                        <canvas class="pie-chart"></canvas>
+                                        </center>
+                                    </div>
+                              </div>
+                            </div>
+                          <!--Fin Indicador 2--->
+                        </div>
+                      </div>
+                </div>
             </div>
+
+          </div>
           <!-- end: content -->          
       
 
@@ -295,6 +338,12 @@
          window.onload = function(){
                 var ctx = $(".doughnut-chart")[0].getContext("2d");
                 window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {
+                    responsive : true,
+                    showTooltips: true
+                });
+
+                var ctx2 = $(".pie-chart")[0].getContext("2d");
+                window.myPie = new Chart(ctx2).Pie(doughnutData, {
                     responsive : true,
                     showTooltips: true
                 });
