@@ -48,7 +48,7 @@
                      <li><a href="ver_perfil.html"><span class="fa fa-user"></span> Mi Perfil</a></li>                  
                      <li class="more">
                       <ul>
-                        <li><a href="login_prueba.html"><span class="fa fa-power-off "></span>Cerrar Sesion</a></li>
+                        <li><a href="ver_perfil.html"><span class="fa fa-power-off "></span>Cerrar Sesion</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -93,7 +93,6 @@
                         <li><a href="modificar_usuario.html">Modificar Datos</a></li>
                         <li><a href="listar_usuario.html">Mostrar Usuarios</a></li>
                         <li><a href="ver_perfil.html">Ver Perfil</a></li>
-
                       </ul>
                     </li>
                   </ul>
@@ -103,77 +102,84 @@
 
       
           <!-- start: content -->
-          <div id="content">
-                <div class="panel">
+            <div id="content">
+              <div class="panel">
                   <div class="panel-body">
                       <div class="col-md-6 col-sm-12">
-                        <h3 class="animated fadeInLeft">Modulo Administrador - Inicio</h3>
+                        <h3 class="animated fadeInLeft">Modulo Administrador - Ver Perfil</h3>
                       </div>
                   </div>                    
-                </div>
-            
+              </div>
 
-            <div class="form-element">
-               <div class="col-md-12">
+              <div class="form-element">
+                
+                  <div class="col-md-12">
                       <div class="panel form-element-padding">
                         <div class="panel-heading">
-                         <h4>Informacion rapída del sistema </h4>
+                         <h4>Ver Perfil - Los datos del usuario actual</h4>
                         </div>
                         <div class="panel-body" style="padding-bottom:15px;">
-
-                        <!--Inicio buscador por fecha-->
-                            <div class="col-md-10">
-                              <div class="col-md-3">
-                                <label>Mostrar indicadores de:</label>
-                              </div>
-                               <div class="col-md-3">
-                               <input type="date" class="form-text" id="entry_date" name="entry_date">
-                               </div>
-                            </div>
-                         <!--Fin buscador por fecha-->
-
-                          <!--Inicia Indicador 1-->
-                            <div class="col-md-3">
-                                <div class="panel">
-                                  <div class="panel-heading-white panel-heading text-center" >
-                                      <h4 href="">Atencion de casos</h4>
-                                    </div>
-                                    <div class="panel-body">
-                                    <center>
-                                      <canvas class="doughnut-chart"></canvas>
-                                      <div class="col-md-2" >
-                                        <a align="right" href="rep_atencion.html">Ver</a>
-                                      </div>
-                                    </center>
-                                  </div>
-                                </div>
-                            </div>
-                          <!--Fin de Indicador 1-->
-
-                          <!--Inicio Indiador 2-->
-                            <div class="col-md-3">
-                              <div class="panel">
-                                   <div class="panel-heading-white panel-heading text-center">
-                                      <h4>Problematica de Ingreso</h4>
-                                    </div>
-                                    <div class="panel-body">
-                                        <center>
-                                        <canvas class="pie-chart"></canvas>
-                                        <div class="col-md-2" >
-                                        <a align="right" href="">Ver</a>
+                            <!--Inicio Formulario Registro usuario-->
+                              <div class="col-md-12 panel-body" style="padding-bottom:15px;">
+                                <form class="cmxform" id="signupForm" method="get" action="">
+                                    <div class="col-md-6">
+                                        <div class="form-group form-animate-text" style="margin-top:10px !important;">
+                                                <input type="text" class="form-text" id="validate_firstname" name="validate_firstname" disabled="">
+                                                <span class="bar"></span>
+                                                <label>Nombres</label>
                                         </div>
-                                        </center>
+
+                                        <div class="form-group form-animate-text" style="margin-top:10px !important;">
+                                                  <input type="text" class="form-text" id="validate_lastname" name="validate_lastname" disabled="true">
+                                                  <span class="bar"></span>
+                                                  <label>Apellidos</label>
+                                        </div>
+
+                                        <div class="form-group form-animate-text" style="margin-top:10px !important;">
+                                            <input type="text" class="form-text" id="validate_ci" name="validate_ci" disabled="">
+                                            <span class="bar"></span>
+                                            <label>Carnet de Identidad</label>
+                                        </div>
+
+                                        <div class="form-group form-animate-text" style="margin-top:10px !important;">
+                                              <label>Foto de Perfil</label>
+                                              <!--Hay mas formatos multimedia en la plantilla view-mail.html-->
+                                              <div class="form-group note-group-select-from-files">
+                                              <!--Se mostrara la foto guardada anes-->
+                                            
+                                            </div>    
+                                        </div>  
+              
                                     </div>
+
+                                    <div class="col-md-6">
+                                            <div class="form-group form-animate-text" style="margin-top:10px !important;">
+                                              <input type="text" class="form-text" id="validate_username" name="validate_username" disabled="true">
+                                              <span class="bar"></span>
+                                              <label>Usuario</label>
+                                            </div>
+
+                                            <div class="form-group form-animate-text" style="margin-top:10px !important;">
+                                              <input type="text" class="form-text" id="validate_email" name="validate_email" disabled="">
+                                              <span class="bar"></span>
+                                              <label>Email</label>
+                                            </div>
+
+                                            <div class="form-group form-animate-text" style="margin-top:10px !important;">
+                                                 <input type="text" class="form-text" id="validate_fono" name="validate_fono" disabled="">
+                                                <span class="bar"></span>
+                                                <label>Telefono</label>
+                                        </div>
+                                    </div> 
+                                </form>
                               </div>
-                            </div>
-                          <!--Fin Indicador 2-->
+                            <!---Fin formulario Registro usurio-->  
                         </div>
                       </div>
-                </div>
-            </div>
-
-          </div>
-          <!-- end: content -->          
+                  </div>
+              
+              </div>
+         <!-- end: content -->          
       
 
     <!-- start: Javascript -->
@@ -356,12 +362,6 @@
          window.onload = function(){
                 var ctx = $(".doughnut-chart")[0].getContext("2d");
                 window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {
-                    responsive : true,
-                    showTooltips: true
-                });
-
-                var ctx2 = $(".pie-chart")[0].getContext("2d");
-                window.myPie = new Chart(ctx2).Pie(doughnutData, {
                     responsive : true,
                     showTooltips: true
                 });
