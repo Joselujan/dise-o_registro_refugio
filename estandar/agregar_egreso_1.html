@@ -130,7 +130,7 @@
                 <div class="panel">
                   <div class="panel-body">
                       <div class="col-md-6 col-sm-12">
-                        <h3 class="animated fadeInLeft">Modulo Estandar - Ficha de Ingreso</h3>
+                        <h3 class="animated fadeInLeft">Modulo Estandar - Ficha de Egreso</h3>
                       </div>
                   </div> 
                </div>
@@ -140,17 +140,17 @@
                     <div class="col-md-12">
                       <div class="panel form-element-padding">
                         <div class="panel-heading">
-                         <h4>Registro de los datos personales de la adolescente que ingresa al refugio</h4>
+                         <h4>Informacion de la adolescente que sale del refugio</h4>
                         </div>
                         <div class="panel-body" style="padding-bottom:15px;">
                           <!--Inicio Botones encabezado-->
                           <div class="col-md-9 padding-0" style="padding-bottom:20px;">
-                            <a class="btn btn-success mb-3" href="agregar_ingreso_1.html">Nuevo Ingreso</a>
+                            <a class="btn btn-success mb-3" href="agregar_ingreso_1.html">Nuevo Egreso</a>
                           </div>
                           <div class="col-md-3 btn-group padding-0" role="group" aria-label="...">
-                            <a class="btn btn-danger mb-3" href="agregar_ingreso_1.html">Parte 1</a>
-                            <a class="btn btn-default  mb-3" href="agregar_ingreso_2.html">Parte 2</a>
-                            <a class="btn btn-default mb-3" href="agregar_ingreso_3.html">Parte 3</a>
+                            <a class="btn btn-danger mb-3" href="agregar_egreso_1.html">Parte 1</a>
+                            <a class="btn btn-default  mb-3" href="agregar_egreso_2.html">Parte 2</a>
+                            <a class="btn btn-default mb-3" href="agregar_egreso_3.html">Parte 3</a>
                           </div>
                           <!--Fin Botones encabezado--> 
                           <!--Inicio Formulario Registro-->
@@ -164,19 +164,19 @@
                                         <div class="media-body box-shadow" style="padding:8px;">
                                             <!--Inicio fila izquierda formulario-->
                                                <div class="col-md-4">
-                                                  <div class="form-group"><label class="col-sm-4 control-label text-right">Fecha- Hr Ingreso:</label>
+                                                  <div class="form-group"><label class="col-sm-4 control-label text-right">Fecha- Hr Egreso:</label>
                                                     <div class="col-sm-8"><input type="date" class="form-control border-bottom" disabled></div>
                                                   </div>
                                                   <div class="form-group"><label class="col-sm-4 control-label text-right">Nombres:</label>
-                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom">
+                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom" disabled="">
                                                     </div>
                                                   </div>
                                                   <div class="form-group"><label class="col-sm-4 control-label text-right">Apellidos:</label>
-                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom">
+                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom" disabled="">
                                                     </div>
                                                   </div>
                                                   <div class="form-group"><label class="col-sm-4 control-label text-right">Edad: </label>
-                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom">
+                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom" disabled="">
                                                     </div>
                                                   </div>
                                                   <div class="form-group"><label class="col-sm-4 control-label text-right">Carnet Identidad</label>
@@ -184,7 +184,12 @@
                                                         <input type="radio" name="option">Tiene
                                                         <input type="radio" name="option"> No Tiene
                                                       </div>
-                                                  </div>                           
+                                                  </div> 
+                                                  <div class="form-group">
+                                                    <label class="col-sm-4 control-label text-right">Tiempo de estadia: </label>
+                                                     <input type="text" class="form-control border-bottom" disabled="">Meses
+                                                     <input type="text" class="form-control border-bottom" disabled="">Años
+                                                  </div>                         
                                                 </div>
                                             <!--Fin fila izquierda formulario-->
                                             <!--Inicio fila central formulario-->
@@ -207,7 +212,7 @@
                                                         <input type="radio" name="option"> No Tiene
                                                       </div>
                                                   </div> 
-                                                  <div class="form-group"><label class="col-sm-4 control-label text-right">Nacionalidad: </label>
+                                                  <div class="form-group"><label class="col-sm-4 control-label text-right">Tramite realziado por el refugio: </label>
                                                     <div class="col-sm-8"><input type="text" class="form-control border-bottom"></div>
                                                   </div>
                                                   <div class="form-group"><label class="col-sm-4 control-label text-right">N°CI:</label>
@@ -221,19 +226,14 @@
                                                     <div class="col-sm-8"><input type="text" class="form-control border-bottom" disabled></div>
                                                   </div>
                                                   <div class="form-group"><label class="col-sm-4 control-label text-right">Fecha nacimiento: </label>
-                                                    <div class="col-sm-8"><input type="date" class="form-control border-bottom">
+                                                    <div class="col-sm-8"><input type="date" class="form-control border-bottom" disabled="">
                                                     </div>
                                                   </div>    
                                                   <div class="form-group"><label class="col-sm-4 control-label text-right">Lugar nacimiento: </label>
-                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom">
+                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom" disabled="">
                                                     </div>
                                                   </div> 
-                                                  <div class="form-group"><label class="col-sm-4 control-label text-right">Procedencia: </label>
-                                                    <div class="col-sm-8 padding-0">
-                                                          <input type="radio" name="option">Urbano
-                                                        <input type="radio" name="option">Rural
-                                                    </div>
-                                                  </div> 
+                                                  
                                                   <div class="form-group"><label class="col-sm-4 control-label text-right">Expira: </label>
                                                     <div class="col-sm-8"><input type="date" class="form-control border-bottom"></div>
                                                   </div>                                                   
@@ -245,7 +245,45 @@
 
                                     <!--Inicio seccion 2-->
                                       <div class="media" style="border-style:outset; padding:5px; font-size: 14px;">
-                                        <a class="media-heading">2.- Antecedentes Familiares </a>
+                                        <a class="media-heading">2.- Modalidad de Egreso </a>
+                                        <div class="media-body box-shadow" style="padding:8px;">
+                                            <!--Inicio opciones-->
+                                          <div class="form-group"><label class="col-sm-12 control-labelt">Modalidad</label>
+
+                                            <div class="col-sm-10">
+                                              <div class="col-md-4">
+                                                <div class="col-sm-12 padding-0">
+                                                  <input type="checkbox" name="option">Memorandum de Egreso
+                                                </div>
+                                                <div class="col-sm-12 padding-0">
+                                                  <input type="checkbox" name="option">Resolucion Judicial
+                                                </div>
+                                              </div>
+                                              <div class="col-md-4">
+                                                <div class="col-sm-12 padding-0">
+                                                  <input type="checkbox" name="option">Familiar
+                                                </div>
+                                                <div class="form-group"><label class="col-sm-4 control-label text-right">Num. Resolucion: </label>
+                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom">
+                                                    </div>
+                                                  </div>
+                                                
+                                              </div>
+                                              <div class="col-md-4">
+                                                <div class="col-sm-12 padding-0">
+                                                  <input type="checkbox" name="option">Profesional
+                                                </div>
+                                              </div>
+                                            </div>                                         
+                                          </div>
+                                          <!--Fin opciones-->
+                                        </div>
+                                      </div>
+                                    <!--Fin seccion 2-->
+
+                                    <!--Inicio seccion 3-->
+                                      <div class="media" style="border-style:outset; padding:5px; font-size: 14px;">
+                                        <a class="media-heading">3.-Datos familiares responsables del egreso</a>
                                         <div class="media-body box-shadow" style="padding:8px;">
                                         <!--Inicio Fromulario dinamico-->  
                                           <form id="myForm">
@@ -268,7 +306,11 @@
                                             <div class="col-md-2">
                                               <label class="col-sm-2 control-label text-right">Parentesco:</label>
                                               <input type="text" name="name1" id="name1" class="form-control border-bottom"/>
-                                            </div>                                         
+                                            </div>  
+                                            <div class="col-md-2">
+                                              <label class="col-sm-2 control-label text-right">Domicilio:</label>
+                                              <input type="text" name="name1" id="name1" class="form-control border-bottom"/>
+                                            </div>                                        
                                             
                                           </div>
                                           <div>
@@ -278,17 +320,13 @@
                                         </form>
                                         <!--Fin Fromulario dinamico--> 
                                         </div>
-                                        <div class="form-group"><label class="col-sm-6 control-label text-right">Numero hermanos:</label>
-                                              <div class="col-sm-6"><input type="text" class="form-control border-bottom">
-                                              </div>
-                                        </div>
-                                        <div class="form-group"><label class="col-sm-6 control-label text-right">Observaciones:</label>
-                                              <div class="col-sm-6"><textarea type="text" class="form-control">
+                                        <div class="form-group"><label class="col-sm-12 control-label">Observaciones:</label>
+                                              <div class="col-sm-12"><textarea type="text" class="form-control">
                                               </textarea>
                                               </div>
                                         </div>
                                       </div>
-                                    <!--Fin seccion 2-->
+                                    <!--Fin seccion 3-->
                                     
                                     </div>
                                 </form>
