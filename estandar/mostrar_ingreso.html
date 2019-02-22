@@ -142,47 +142,39 @@
                         </div>
                         <div class="panel-body" style="padding-bottom:15px;">
                           <!--Inicio buscadores-->
-                                <div class="col-md-12">
-                                    <!--Inicio buscador por mes-->
-                                        <div class="btn-group">
-                            <!--Buscador por zonas declarado con metodo scopeplate en modelo Zone-->
-                            <form action="" method="get" role="search"
-                                  class="form-group">
-                                <div class="col-md-6 col-md-12">
-                                    <div class="col-sm-12">
-                                        <!--name como esta en la BD-->
-                                        <label class="label-search"><b>Ingrese CI de refugiada</b> </label>
-
-                                    </div>
-                                    <div class="col-md-9">
-
-                                        <div class="col-sm-12">
+                            <div class="col-md-12">
+                              <div class="btn-group">
+                                <!--Buscador por CI declarado con metodo scopeplate en modelo Usuario-->
+                                  <form action="" method="get" role="search"
+                                        class="form-group">
+                                      <div class="col-md-6 col-md-12">
+                                          <div class="col-sm-12">
                                             <!--name como esta en la BD-->
-
-                                           <input type="text" name="idzones" class="form-control primary" placeholder="Buscar por CI" size="100">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="col-md-3">
-                                        <button type="submit" class="btn btn-primary mb-3"> Buscar</button>
-                                    </div>
-                                </div>
-                            </form>
-                        
-                                   <!--Fin buscador por mes-->
-                                </div>
-                          <!--Fin buscadores-->
-                        <hr>                    
+                                            <label class="label-search"><b>Ingrese CI de refugiada</b> </label>
+                                          </div>
+                                          <div class="col-md-9">
+                                            <div class="col-sm-12">
+                                              <!--name como esta en la BD-->
+                                              <input type="text" name="idzones" class="form-control primary" placeholder="Buscar por CI" size="100">
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3">
+                                              <button type="submit" class="btn btn-primary mb-3"> Buscar</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                                <!--Fin buscador por mes-->
+                              </div>
+                            </div>
+                          <!--Fin buscadores-->                    
                         <div class="col-md-12 padding-0">
+                        <br>
+                        <div class="col-md-12">
                           <!--Inicio Tabla-->
                           <div class="table-container">
-                            <div class="panel-heading">
-                                <h4>Los casos registrados son:</h4>
-                            </div>
                             <div class="responsive-table">
-                              <table class="table table-striped table-bordered">
-                                  <thead class="thead-dark">
+                              <table class="table table-striped " border="1px" align="center">
+                                  <thead class="thead-dark " >
                                   <th scope="col">Nº</th>
                                   <th scope="col">Fecha Ingreso</th>
                                   <th scope="col">Nombr-Apellidos</th>
@@ -192,17 +184,23 @@
                                   <th scope="col">Opciones</th>
                                   </thead>
                                   <tbody >
-                                      <tr>
+                                      <tr >
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td>
-                                          <a class="btn btn-info" href="">Editar<span class="glyphicon glyphicon-pencil"></span></a>
-                                          <a class="btn bg-orange" href="">Social<span class="glyphicon glyphicon-pencil"></span></a>
-                                          <a class="btn bg-dark-pink" href="">Egreso<span class="glyphicon glyphicon-pencil"></span></a>
+                                        <td align="center">
+                                          <div class="fa-hover col-md-3 col-sm-4 text-white" align="right">
+                                            <a class="btn bg-info mb-3 fa fa-pencil text-white" href="modificar_ingreso_1.html" align="text-center">Editar</a>
+                                          </div>
+                                          <div class="fa-hover col-md-3 col-sm-4 text-white" align="right">
+                                            <a class="btn bg-orange mb-3 fa fa-folder-open text-white" href="agregar_social_1.html" align="text-center">Social</a>
+                                          </div>
+                                          <div class="fa-hover col-md-3 col-sm-4 text-white" align="right">
+                                            <a class="btn bg-teal mb-3 fa fa-mail-forward text-white" href="agregar_egreso_1.html" align="text-center">Egreso</a>
+                                          </div>
                                         </td>                                     
                                       </tr>
                                       <tr>
@@ -213,6 +211,7 @@
                             </div>
                           </div>
                           <!--Fin Tabla-->
+                        </div>
                         </div>
                       </div>
                       </div> <!--Fin "panel form-element-padding"-->
