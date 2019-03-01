@@ -198,8 +198,8 @@
                                                     </div>
                                                   </div> 
 
-                                                  <div class="form-group "><label class="col-sm-4 control-label text-right bg-dark-red ">Instancia que interna:</label>
-                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom" disabled="">
+                                                  <div class="form-group "><label class="col-sm-4 control-label text-right ">Instancia que interna:</label>
+                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom">
                                                     </div>
                                                   </div>                                         
                                                 </div>
@@ -226,8 +226,8 @@
                                                       <div class="col-sm-8"><input type="text" class="form-control border-bottom">
                                                     </div>
                                                   </div>
-                                                  <div class="form-group "><label class="col-sm-4 control-label text-right bg-dark-red ">Problematica:</label>
-                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom" disabled="">
+                                                  <div class="form-group "><label class="col-sm-4 control-label text-right">Problematica:</label>
+                                                    <div class="col-sm-8"><input type="text" class="form-control border-bottom">
                                                     </div>
                                                   </div>                      
                                                 </div>
@@ -252,7 +252,7 @@
                                                         <input type="radio" name="option">Noche
                                                     </div>
                                                   </div> 
-                                                  <div class="form-group"><label class="col-sm-4 control-label text-right">Nº:</label>
+                                                  <div class="form-group"><label class="col-sm-4 control-label text-right">Nº direccion U.E:</label>
                                                       <div class="col-sm-8"><input type="text" class="form-control border-bottom">
                                                     </div>
                                                   </div>                                                 
@@ -283,9 +283,6 @@
                                         <!--Inicio Fromulario dinamico-->  
                                           <form id="myForm">
                                             <div id="input1" style="margin-bottom:4px;" class="clonedInput">
-                                              <div class="col-md-1">
-                                              <label class="col-sm-1 control-label text-right">Num:</label><input type="text" name="name1" id="name1" class="form-control border-bottom"/>
-                                              </div>
                                               <div class="col-md-2">
                                               <label class="col-sm-2 control-label text-right">Nombres:</label><input type="text" name="name1" id="name1" class="form-control border-bottom"/>
                                               </div>
@@ -295,20 +292,33 @@
                                              </div>
                                              <div class="col-md-1">
                                               <label class="col-sm-1 control-label text-right">Parentesco:</label>
-                                              <input type="text" name="name1" id="name1" class="form-control border-bottom" />
+                                              <select class="form-control">
+                                                <option>Padres</option>
+                                                <option>Herman@</option>
+                                                <option>Ti@</option>
+                                                <option>Abuel@</option>
+                                              </select>
                                             </div>
                                             <div class="col-md-1">
                                               <label class="col-sm-1 control-label text-right">Edad:</label>
                                               <input type="text" name="name1" id="name1" class="form-control border-bottom"/>
                                             </div>
-                                            <div class="col-md-2">
+                                            <div class="col-md-1">
                                               <label class="col-sm-2 control-label text-right">Estado Civil:</label>
-                                              <input type="text" name="name1" id="name1" class="form-control border-bottom"/>
+                                              <select class="form-control">
+                                                <option>Soltero</option>
+                                                <option>Casado</option>
+                                                <option>Divorsiado</option>
+                                              </select>
+                                            </div>  
+                                            <div class="col-md-1">
+                                              <label class="col-sm-1 control-label text-right">Nivel de Instruccion:</label>
+                                              <select class="form-control">
+                                                <option>Primaria</option>
+                                                <option>Secundaria</option>
+                                                <option>Universitaria</option>
+                                              </select>
                                             </div>   
-                                            <div class="col-md-2">
-                                              <label class="col-sm-2 control-label text-right">Nivel Instruccion:</label>
-                                              <input type="text" name="name1" id="name1" class="form-control border-bottom"/>
-                                            </div>    
                                             <div class="col-md-2">
                                               <label class="col-sm-2 control-label text-right">Ocupacion:</label>
                                               <input type="text" name="name1" id="name1" class="form-control border-bottom"/>
